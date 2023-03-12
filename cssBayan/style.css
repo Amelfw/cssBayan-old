@@ -19,12 +19,10 @@
 .mem1-title {
     display: block;
     padding: 10px 10px;
-    position: relative;
     color: #b91125;
     cursor: pointer;
-
+    position: relative;
     transition: background .2s ease-out;
-    
 }
 
 
@@ -35,10 +33,10 @@
     content: '⇓';
     display: block;
     
-    
+    transform: translateY(-25%);
     text-align: right;
     top: 50%;  
-    transform: translateY(-50%);  
+    
 
 }
 
@@ -53,14 +51,18 @@
 }
 
 
-.mem1-input:checked ~ .mem1-title:after {
-    content: '⇑'; 
-    display: block;
-}
+
 .mem1-input:checked + .mem1-text{
     display: block;
     
 }
+
+
+.mem1-input:checked ~ .mem1-title:after 
+{
+    content: '⇓';
+}
+
 
 .mem1-text {
     display: none;
