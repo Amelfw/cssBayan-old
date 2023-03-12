@@ -3,8 +3,9 @@
     font-size: 20px;
     line-height: 1.5;
     color:brown;
-
+    
 }
+
 
 /*mem1*/
 .mem1 {
@@ -13,12 +14,12 @@
 
 }
 .mem1-item {
-    border: 0px solid #b91125
+    border-top: 1px solid #b91125
 }
 .mem1-title {
     display: block;
     padding: 10px 10px;
-    
+    position: relative;
     color: #b91125;
     cursor: pointer;
 
@@ -31,11 +32,14 @@
     background-color: #e95f6f;
 }
 .mem1-title:after {
-    content: '+';
+    content: '⇓';
     display: block;
+    
+    
     text-align: right;
     top: 50%;  
     transform: translateY(-50%);  
+
 }
 
 .mem1-input{
@@ -49,13 +53,13 @@
 }
 
 
-.mem1-input:checked ~ .mem1-title::after {
-    border-style: s;
-    content: '-';
-    
+.mem1-input:checked ~ .mem1-title:after {
+    content: '⇑'; 
+    display: block;
 }
 .mem1-input:checked + .mem1-text{
     display: block;
+    
 }
 
 .mem1-text {
