@@ -13,7 +13,7 @@
 
 }
 .mem1-item {
-    border: 1px solid #b91125
+    border: 0px solid #b91125
 }
 .mem1-title {
     display: block;
@@ -26,10 +26,17 @@
     
 }
 
-.mem1-title:hover {
-    background-color: #11090a;
-}
 
+.mem1-title:hover {
+    background-color: #e95f6f;
+}
+.mem1-title:after {
+    content: '+';
+    display: block;
+    text-align: right;
+    top: 50%;  
+    transform: translateY(-50%);  
+}
 
 .mem1-input{
     width: 0;
@@ -41,6 +48,12 @@
     position: absolute;
 }
 
+
+.mem1-input:checked ~ .mem1-title::after {
+    border-style: s;
+    content: '-';
+    
+}
 .mem1-input:checked + .mem1-text{
     display: block;
 }
