@@ -3,7 +3,10 @@
     font-size: 20px;
     line-height: 1.5;
     color:brown;
-    
+    width: 500px;
+    margin-top: 0;
+    margin: 100% auto;
+    text-align: center;
 }
 
 
@@ -60,7 +63,7 @@
 
 .mem1-input:checked ~ .mem1-title:after 
 {
-    content: '⇓';
+    content: '_+_';
 }
 
 
